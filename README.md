@@ -15,6 +15,8 @@ This project focuses on analyzing the relationship between recipe preparation ti
      - date(time): date that the recipe is reviewed (yyyy-mm-dd)
      - rating(int): rate of the recipe 0-5
      - review(str): review about the recipe
+ 
+   
 
 
 
