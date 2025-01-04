@@ -106,7 +106,7 @@ For this analysis, shows the two kind of plots to see the distributions for the 
 - column [minutes_binned] - if the recipe takes more than 120min, it will be Nan (there are 24294 mmissing)
 
 ### Missingness Dependency
-Because of the amount of missingness, for [minutes binned], choose two columns for each
+Because of the amount of missingness, for [minutes binned], choose two columns for each to see the dependency if the reason of missingness is NMAR or not.
 - column depends on other variable: minutes (p-value is 0.0)
     - reason: If the recipe takes long hours over the set bins, it will be missing values
 - column doesn't depend on other variable: rating (p-value is 1.0)
