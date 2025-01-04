@@ -81,7 +81,7 @@ For this analysis, shows the two kind of plots to see the distributions for the 
  - Plot2: Histgram for the rating of recipes
      - It shows the frequency of the rating. Rate 5 is the most in the data set.
   
-       ## show plot here
+       ## show 2 plots here 
   
 
 ### Bivariate Analysis
