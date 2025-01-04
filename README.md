@@ -72,6 +72,14 @@ This project focuses on analyzing the relationship between recipe preparation ti
 | carbohydrates(float)| amount of carbohydrates for the recipe |
 
 
+### Univariate Analysis
+- Using plotly to show the distribution
+ - Plot1: Histgram for the number of ingredients
+     - It shows the frequency of the number of ingredients in the data set. 7-8 ingredients are the most.
+ - Plot2: Histgram for the rating of recipes
+     - It shows the frequency of the rating. Rate 5 is the most in the data set.
+
+
       
 
 
