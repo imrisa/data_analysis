@@ -39,6 +39,21 @@ This project focuses on analyzing the relationship between recipe preparation ti
      - ingredients(str list): ingredients for the recipe
      - n_ingredients(int): the amount of ingredients
  
+| Column | Description |
+| ----------- | ----------- |
+| name(str)| recipe name |
+| id(int) | recipe id |
+| minutes(int) | time to cook the recipe |
+| contributor_id(int) | contributor's id |
+| submitted(date) | date the recipe was submitted |
+| tags(str list) | Food.com tags for recipe |
+| nutrition(str) | list contains each nutrition's amount |
+| n_steps(int) | number of steps in recipe |
+| steps(str list) | steps to take in the recipe |
+| description(str) | description about the recipe |
+| ingredients(str list) | ingredients for the recipe |
+| n_ingredients(int) | the amount of ingredients |
+ 
 ##  Q: How rating is going to change based on the features? 📈
 - The columns I need:
     - rating - this is the main
