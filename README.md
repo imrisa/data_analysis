@@ -118,7 +118,7 @@ For this analysis, shows the two kind of plots to see the distributions for the 
 |        4 |                  230.7   |       91.585  |
 |        5 |                  248.383 |      106.924  |
 
-#### Pivot Table (columns are the rating and the values are the minite binned)
+#### Pivot Table (columns are the rating and the values are the minute binned):
 
 |     1.0 |     2.0 |     3.0 |     4.0 |     5.0 |
 |--------:|--------:|--------:|--------:|--------:|
@@ -149,6 +149,8 @@ Calcurate the observed test statistic and the difference in mean is 675. The tes
 - Alternative Hypothesis (H₁): The missingness of the column is dependent on the variable, meaning the difference in means (675) is significant and not due to chance.
 
 ### Permutation test
+explanation
+
 
 
  
