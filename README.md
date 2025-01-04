@@ -53,7 +53,7 @@ This project focuses on analyzing the relationship between recipe preparation ti
     - drop unnecessary columns
  
       ### After cleaning
- | Column | Description |
+| Column | Description |
 | ----------- | ----------- |
 | minutes(int) | time to cook the recipe |
 | n_steps(int) | number of steps in recipe |
