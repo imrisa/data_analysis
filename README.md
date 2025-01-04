@@ -81,7 +81,12 @@ For this analysis, shows the two kind of plots to see the distributions for the 
  - Plot2: Histgram for the rating of recipes
      - It shows the frequency of the rating. Rate 5 is the most in the data set.
   
-
+<iframe
+  src="plot1.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
   
 
