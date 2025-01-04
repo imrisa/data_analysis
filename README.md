@@ -73,6 +73,7 @@ This project focuses on analyzing the relationship between recipe preparation ti
 
 
 ### Univariate Analysis
+For this analysis, shows the two kind of plots to see the distributions for the ingredients and the rates.
 - Using plotly to show the distribution
  - Plot1: Histgram for the number of ingredients
      - It shows the frequency of the number of ingredients in the data set. 7-8 ingredients are the most.
