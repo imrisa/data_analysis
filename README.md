@@ -15,6 +15,14 @@ This project focuses on analyzing the relationship between recipe preparation ti
      - date(time): date that the recipe is reviewed (yyyy-mm-dd)
      - rating(int): rate of the recipe 0-5
      - review(str): review about the recipe
+ 
+| Column | Description |
+| ----------- | ----------- |
+| user_id(int)| user id |
+| recipe_id(int) | recipe id |
+| date(time) | date that the recipe is reviewed (yyyy-mm-dd) |
+| rating(int) | rate of the recipe 0-5 |
+| review(str) | review about the recipe |
 
 
 - import raw recipes data (rows: 83782, columns: 12)
@@ -35,7 +43,20 @@ This project focuses on analyzing the relationship between recipe preparation ti
 - The columns I need:
     - rating - this is the main
     - minumtes, n_ingredients, steps, description, review, ingredients
-   
+
+
+## Data Cleaning and Exploratory Data Analysis
+### Data Cleaning
+- clean data set:
+    - merge both data sets with 'recipe_id' and 'id'
+    - replace all nan value with 0 in rating column
+    - calculate average rating as a Series and add it to the data set
+    - put nutrition column's list element into each separated columns
+    - drop unnecessary columns
+ 
+      ### I need to show the dataframe here
+
+      
 
 
 
