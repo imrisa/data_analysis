@@ -82,6 +82,10 @@ For this analysis, shows the two kind of plots to see the distributions for the 
   
 
 ## Bivariate Analysis
+- Scatter Plot: Rating vs Minutes shows how rating and minits to cook are related each other. Rate 4 and 5 looks like takes more time than others
+
+
+  
 
 
 
