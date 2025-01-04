@@ -83,10 +83,38 @@ For this analysis, shows the two kind of plots to see the distributions for the 
        ## show plot here
   
 
-## Bivariate Analysis
+### Bivariate Analysis
 - Scatter Plot: Rating vs Minutes shows how rating and minits to cook are related each other. Rate 4 and 5 looks like takes more time than others.
 
   ## show plot here
+
+### Interesting Aggregates
+ - Aggragate data
+     - groupby the rate and shows average length of description and mitures to take for each rate
+       - About description length, there is no specific pattern. Almost every rate has the similar length
+       - About average minute, the longest minute has 1 rate and the 2nd longest minutes has 5 rate. For other rate, the average minutes are similar.
+ - Pivot table
+     - index is the minutes_bin and columns are the rate 0-5, and shows each average description length
+       - Almost all minutes bins are the similar length of description, but 60-120min tends to have a little longer descriptions.
+      
+
+       ## show the pivot table
+
+### Assessment of Missingness
+## NMAR Analysis
+- column [review] - not all people review for the recipe, regardless of how good it is (there are 57 missing)
+- column [minutes_binned] - if the recipe takes more than 120min, it will be Nan (there are 24294 mmissing)
+
+## Missingness Dependency
+Because of the amount of missingness, for [minutes binned], choose two columns for each
+- column depends on other variable: minutes (p-value is 0.0)
+    - reason: If the recipe takes long hours over the set bins, it will be missing values
+- column doesn't depend on other variable: rating (p-value is 1.0)
+    - reason: Rating and time to take for preparation has no correlation. Rating might be strongly related to other factor. 
+
+ 
+       
+
 
 
   
