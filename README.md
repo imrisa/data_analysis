@@ -107,9 +107,25 @@ For this analysis, shows the two kind of plots to see the distributions for the 
  - Pivot table
      - index is the minutes_bin and columns are the rate 0-5, and shows each average description length
        - Almost all minutes bins are the similar length of description, but 60-120min tends to have a little longer descriptions.
-      
 
-       ## show the pivot table
+#### Grouped Table:
+
+|   rating |   avg_description_length |   avg_minutes |
+|---------:|-------------------------:|--------------:|
+|        1 |                  265.128 |       99.6725 |
+|        2 |                  260.945 |       98.0215 |
+|        3 |                  237.555 |       87.4976 |
+|        4 |                  230.7   |       91.585  |
+|        5 |                  248.383 |      106.924  |
+
+#### Pivot Table (columns are the rating and the values are the minite binned)
+
+|     1.0 |     2.0 |     3.0 |     4.0 |     5.0 |
+|--------:|--------:|--------:|--------:|--------:|
+| 229.889 | 228.259 | 219.929 | 209.638 | 215.936 |
+| 252.283 | 227.24  | 219.352 | 218.439 | 232.674 |
+| 263.096 | 259.485 | 238.278 | 236.956 | 253.068 |
+| 298.739 | 311.365 | 253.216 | 253.18  | 277.199 |
 
 ## Assessment of Missingness
 ### NMAR Analysis
@@ -126,7 +142,14 @@ Because of the amount of missingness, for [minutes binned], choose two columns f
 ### Check the dependency if the missingness column will be affected by other values
 - For minute column (if minutes_binned DOES depend on minute)
   - make a new column ['missing_minutes_binned'] and check the dependency
- Calcurate the observed test statistic and the difference in mean is 675 which is high and it means
+Calcurate the observed test statistic and the difference in mean is 675. The test statistic (difference in means) represents the difference in numerical measure between two groups. One is in the column has missing value and another in the column doesn't have missing values.
+
+#### Hypothesis 
+- Null Hypothesis (H₀): The missingness of the column is independent of the variable used to calculate the difference in means. The observed difference (675) is due to random chance.
+- Alternative Hypothesis (H₁): The missingness of the column is dependent on the variable, meaning the difference in means (675) is significant and not due to chance.
+
+### Permutation test
+
 
  
        
