@@ -81,7 +81,8 @@ For this analysis, shows the two kind of plots to see the distributions for the 
  - Plot2: Histgram for the rating of recipes
      - It shows the frequency of the rating. Rate 5 is the most in the data set.
   
-       ## show 2 plots here 
+
+
   
 
 ### Bivariate Analysis
@@ -116,6 +117,7 @@ Because of the amount of missingness, for [minutes binned], choose two columns f
 ### Check the dependency if the missingness column will be affected by other values
 - For minute column (if minutes_binned DOES depend on minute)
   - make a new column ['missing_minutes_binned'] and check the dependency
+ Calcurate the observed test statistic and the difference in mean is 675 which is high and it means
 
  
        
