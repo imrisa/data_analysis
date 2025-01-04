@@ -110,7 +110,11 @@ Because of the amount of missingness, for [minutes binned], choose two columns f
 - column depends on other variable: minutes (p-value is 0.0)
     - reason: If the recipe takes long hours over the set bins, it will be missing values
 - column doesn't depend on other variable: rating (p-value is 1.0)
-    - reason: Rating and time to take for preparation has no correlation. Rating might be strongly related to other factor. 
+    - reason: Rating and time to take for preparation has no correlation. Rating might be strongly related to other factor.
+ 
+### Check the dependency if the missingness column will be affected by other values
+- For minute column (if minutes_binned DOES depend on minute)
+  - make a new column ['missing_minutes_binned'] and check the dependency
 
  
        
