@@ -80,9 +80,13 @@ For this analysis, shows the two kind of plots to see the distributions for the 
  - Plot2: Histgram for the rating of recipes
      - It shows the frequency of the rating. Rate 5 is the most in the data set.
   
+       ## show plot here
+  
 
 ## Bivariate Analysis
-- Scatter Plot: Rating vs Minutes shows how rating and minits to cook are related each other. Rate 4 and 5 looks like takes more time than others
+- Scatter Plot: Rating vs Minutes shows how rating and minits to cook are related each other. Rate 4 and 5 looks like takes more time than others.
+
+  ## show plot here
 
 
   
