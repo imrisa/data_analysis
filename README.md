@@ -16,7 +16,7 @@ This project focuses on analyzing the relationship between recipe preparation ti
 | user_id(int)| user id |
 | recipe_id(int) | recipe id |
 | date(time) | date that the recipe is reviewed (yyyy-mm-dd) |
-| rating(int) | rate of the recipe 0-5 |
+| rating(float) | rate of the recipe 0-5 |
 | review(str) | review about the recipe |
 
 
@@ -52,7 +52,25 @@ This project focuses on analyzing the relationship between recipe preparation ti
     - put nutrition column's list element into each separated columns
     - drop unnecessary columns
  
-      ### I need to show the dataframe here
+      ### After cleaning
+ | Column | Description |
+| ----------- | ----------- |
+| minutes(int) | time to cook the recipe |
+| n_steps(int) | number of steps in recipe |
+| description(str) | description about the recipe |
+| ingredients(str list) | ingredients for the recipe |
+| n_ingredients(int) | the amount of ingredients |
+| rating(float) | rate of the recipe 0-5 |
+| review(str) | review about the recipe |
+| avg_rating(float) | average rating after merging the data |
+| calories(float) | amount of calories for the recipe |
+| total_fat(float) | amount of total fat for the recipe |
+| sugar(float) | amount of sugar for the recipe |
+| sodium(float) | amount of sodium for the recipe |
+| protein(float)| amount of protein for the recipe |
+| saturated_fat(float)| amount of saturated fat for the recipe |
+| carbohydrates(float)| amount of carbohydrates for the recipe |
+
 
       
 
