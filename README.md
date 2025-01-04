@@ -3,11 +3,11 @@ This is a project for DSC80 at UCSD
 
 
 
-## H2 Introduction
+## Introduction
 
 This project focuses on analyzing the relationship between recipe preparation time, measured in minutes, and user ratings to uncover trends in recipe popularity. Additionally, it involves developing a predictive model to estimate average recipe ratings using key nutritional factors such as calories, fat, and sugar. By integrating exploratory data analysis with predictive modeling, this project provides valuable insights into how preparation time and nutritional profiles impact user satisfaction and preferences.
 
-### H3 Using recipe data
+### Using recipe data
 **1) Import each csv file and take a look at each content for analysis**
 - import raw interaction data (rows: 731927, columns: 5)
      - user_id(int): user id
@@ -30,6 +30,11 @@ This project focuses on analyzing the relationship between recipe preparation ti
      - description(str): description about the recipe
      - ingredients(str list): ingredients for the recipe
      - n_ingredients(int): the amount of ingredients
+ 
+##  Q: How rating is going to change based on the features? 📈
+- The columns I need:
+    - rating - this is the main
+    - minumtes, n_ingredients, steps, description, review, ingredients
    
 
 
