@@ -88,6 +88,14 @@ For this analysis, shows the two kind of plots to see the distributions for the 
   frameborder="0"
 ></iframe>
 
+<iframe
+  src="plot2.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+
   
 
 ### Bivariate Analysis
