@@ -156,6 +156,13 @@ Calcurate the observed test statistic and the difference in mean is 675. The tes
 ### Permutation test
 explanation
 
+<iframe
+  src="plot4.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
 
 
 
