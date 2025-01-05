@@ -170,11 +170,12 @@ This part performs a permutation test to evaluate whether there is a dependency 
   frameborder="0"
 ></iframe>
 
-5. Result with p-value: p-value 0.0 Because of the p-value < 0.05, reject H0 and missing_minute_binned IS depending on minute
+#### Result with p-value: 
+- p-value 0.0 Because of the p-value < 0.05, reject H0 and missing_minute_binned IS depending on minute
 
 
 
-#### For rating column (if missing_minutes_binned depends on rating column)
+##### For rating column (if missing_minutes_binned depends on rating column)
 #### Hypothesis 
 - Null Hypothesis (H₀): The missingness of the column is independent of the variable used to calculate the difference in means. The observed difference (-0.057) is due to random chance.
 - Alternative Hypothesis (H₁): The missingness of the column is dependent on the variable, meaning the difference in means (-0.057) is significant and not due to chance
@@ -194,7 +195,8 @@ This part performs same as the previous permutation test to evaluate whether the
   frameborder="0"
 ></iframe>
 
-5. Result with p-value: p-value 1.0 Because of the p-value > 0.05, fail to reject H0 and missing_minute_binned IS NOT depending on rating
+#### Result with p-value: 
+- p-value 1.0 Because of the p-value > 0.05, fail to reject H0 and missing_minute_binned IS NOT depending on rating
 
 
 ## Hypothesis Testing
