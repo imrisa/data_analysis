@@ -37,7 +37,7 @@ This project focuses on analyzing the relationship between recipe preparation ti
 | ingredients(str list) | ingredients for the recipe |
 | n_ingredients(int) | the amount of ingredients |
  
-##  Q: How rating is going to change based on the features? 📈
+####  Q: How rating is going to change based on the features? 📈
 - The columns I need:
     - rating - this is the main
     - minumtes, n_ingredients, steps, description, review, ingredients
@@ -89,8 +89,8 @@ For this analysis, shows the two kind of plots to see the distributions for the 
 ></iframe>
 <iframe
   src="plot2.html"
-  width="800"
-  height="600"
+  width="600"
+  height="400"
   frameborder="0"
 ></iframe>
 
@@ -175,7 +175,8 @@ This part performs a permutation test to evaluate whether there is a dependency 
 - p-value 0.0 Because of the p-value < 0.05, reject H0 and missing_minute_binned IS depending on minute
 
 
-
+#### For rating column
+(if missing_minutes_binned depends on rating column)
 #### Hypothesis 
 - For rating column (if missing_minutes_binned depends on rating column)
  - Null Hypothesis (H₀): The missingness of the column is independent of the variable used to calculate the difference in means. The observed difference (-0.057) is due to random chance.
@@ -213,9 +214,9 @@ This part performs same as the previous permutation test to evaluate whether the
 3. It uses the actual observed data to create a distribution, making it robust and reliable for this specific comparison.
 
 #### Result:
-Observed Difference: 0.03412279818560471
-P-Value: 0.0
-Because pvalue < 0.05 - regect H0. It means that the average rating for short and long preparation time for the recipe is different. Any observed differences in average ratings are not due to random variation.
+- Observed Difference: 0.03412279818560471
+- P-Value: 0.0
+- Because pvalue < 0.05 - regect H0. It means that the average rating for short and long preparation time for the recipe is different. Any observed differences in average ratings are not due to random variation.
 
 <iframe
   src="plot6.html"
@@ -224,10 +225,39 @@ Because pvalue < 0.05 - regect H0. It means that the average rating for short an
   frameborder="0"
 ></iframe>
 
+### Framing a Prediction Problem
+#### Q: Predict average ratings of recipes 
+Which columns are the best for the features?
+- Prediction type: regression (Linear Regression model)
+- y (prediction value): rating
+- X (features):
+    - minutes - time to cook 
+    - n_steps - the number of steps to cook
+    - n_ingredients - the number of ingredients
+    - nutritions - any specific nutrition (calories, sugar, sodium...etc)
+ 
+#### Justification
+- About the time
+    - All features need to be known before the rate is stated by the user.
+    - User interaction data should be avoided for the feature such as review because this is stated after recipe is published.
+ 
+ 
 
+### Baseline Model
+#### Model Description
+- Type:
+    - Linear Regression model
+- Pipleline:
+  - Scaler: StandardScaler was used to normalize the quantitative features, ensuring they are on the same scale
+  - Regressor: LinearRegression to predict avg_rating
+- Peformance:
+    - RMSE: to see the accuracy of the prediction line with the error size
 
-## Baseline Model
-
+#### Features
+- Features (All Quantitative because of numerical): calories, total fat, and sugar
+- Models: 20% for the test for unseen data, 80% for the training
+    - Test data set: To see the unbiased estimate of how well the model gereralizes to new data
+    - Training data set: To learn the relationship between the features and the target prediction value
 
 
 
