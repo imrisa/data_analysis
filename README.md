@@ -149,7 +149,8 @@ Because of the amount of missingness, for [minutes binned], choose two columns f
   - make a new column ['missing_minutes_binned'] and check the dependency
 Calcurate the observed test statistic and the difference in mean is 675. The test statistic (difference in means) represents the difference in numerical measure between two groups. One is in the column has missing value and another in the column doesn't have missing values.
 
-#### For minute column (if missing_minutes_binned depends on minute column)
+#### For minute column 
+(if missing_minutes_binned depends on minute column)
 #### Hypothesis 
 - Null Hypothesis (H₀): The missingness of the column is independent of the variable used to calculate the difference in means. The observed difference (675) is due to random chance.
 - Alternative Hypothesis (H₁): The missingness of the column is dependent on the variable, meaning the difference in means (675) is significant and not due to chance.
