@@ -255,17 +255,43 @@ Which columns are the best for the features?
     - RMSE: to see the accuracy of the prediction line with the error size
 
 #### Features
-- Features (All Quantitative because of numerical): calories, total fat, and sugar
+- Features (All Quantitative because of numerical): total fat and sugar
 - Models: Linear Regression
     - 20% for the test for unseen data, 80% for the training
     - Test data set: To see the unbiased estimate of how well the model gereralizes to new data
     - Training data set: To learn the relationship between the features and the target prediction value
  
 #### Making a prediction and evaluate
- - Root Mean Squared Error (RMSE): 0.4897517055532478
+ - Root Mean Squared Error (RMSE): 0.48990401421032537
   - The square root of MSE, indicating the model's average error in the same units as the target variable (avg_rating)
 
 ## shows graph here about ML
+
+
+## Final Model
+#### Immprovement
+- Having different models for the pipeline:
+    - StandardScaler: Standardizes numerical features by removing the mean and scaling to unit variance
+        - Ensures all features are on the same scale
+    - PolynomialFeatures: Generates additional features by computing interactions and powers of existing features (calories * sugar)
+        - Capture the non-linear relation and it enhances the model flexibility and the prediciton accuracy.
+    - QuantileTransformer: Transforms the data into a normal or uniform distribution.
+        - Helps models handle skewed data better by normalizing feature distributions.
+
+- Features:
+  - Adding two new features (protein, carbohydrates)
+   - The reason why this feature is good:
+   - Nutritions are highly related to the quality of the recipe and the rate
+   - Protein and carbohydrates are especially related to individual preferences and it affects the rate
+
+   
+- Type:
+    - RandomForestRegressor: To handle non-linear relation to have more accuracy.
+
+- RMSE is a little bit improved from the previous 0.49 to 0.36
+    - standardizes variance makes the prediction easier because all features are closer
+    - captured the non-linear relation is crucial because linear regression is robust to the outliner
+
 
 
 
