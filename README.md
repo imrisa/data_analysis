@@ -176,10 +176,10 @@ This part performs a permutation test to evaluate whether there is a dependency 
 
 
 
-##### For rating column (if missing_minutes_binned depends on rating column)
 #### Hypothesis 
-- Null Hypothesis (H₀): The missingness of the column is independent of the variable used to calculate the difference in means. The observed difference (-0.057) is due to random chance.
-- Alternative Hypothesis (H₁): The missingness of the column is dependent on the variable, meaning the difference in means (-0.057) is significant and not due to chance
+- For rating column (if missing_minutes_binned depends on rating column)
+ - Null Hypothesis (H₀): The missingness of the column is independent of the variable used to calculate the difference in means. The observed difference (-0.057) is due to random chance.
+ - Alternative Hypothesis (H₁): The missingness of the column is dependent on the variable, meaning the difference in means (-0.057) is significant and not due to chance
 
 ### Permutation test
 This part performs same as the previous permutation test to evaluate whether there is a dependency between the column missing_minutes_binned (a categorical variable) and rating (a numerical variable) in the dataset merged_data.
@@ -195,7 +195,6 @@ This part performs same as the previous permutation test to evaluate whether the
   height="600"
   frameborder="0"
 ></iframe>
-
 #### Result with p-value: 
 - p-value 1.0 Because of the p-value > 0.05, fail to reject H0 and missing_minute_binned IS NOT depending on rating
 
