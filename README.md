@@ -51,6 +51,7 @@ This project focuses on analyzing the relationship between recipe preparation ti
     - calculate average rating as a Series and add it to the data set
     - put nutrition column's list element into each separated columns
     - drop unnecessary columns
+    - deine the range of nutrition so they have right amount  for the recipe
  
       ### After cleaning
       
@@ -67,9 +68,7 @@ This project focuses on analyzing the relationship between recipe preparation ti
 | calories(float) | amount of calories for the recipe |
 | total_fat(float) | amount of total fat for the recipe |
 | sugar(float) | amount of sugar for the recipe |
-| sodium(float) | amount of sodium for the recipe |
 | protein(float)| amount of protein for the recipe |
-| saturated_fat(float)| amount of saturated fat for the recipe |
 | carbohydrates(float)| amount of carbohydrates for the recipe |
 
 
