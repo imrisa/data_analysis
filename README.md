@@ -169,7 +169,7 @@ This code performs a permutation test to evaluate whether there is a dependency 
   frameborder="0"
 ></iframe>
 
-
+5. Result with p-value: p-value 0.0 Because of the p-value < 0.05, missing_minute_binned IS depending on minute
 
 ### Permutation test
 table
