@@ -149,12 +149,13 @@ Because of the amount of missingness, for [minutes binned], choose two columns f
   - make a new column ['missing_minutes_binned'] and check the dependency
 Calcurate the observed test statistic and the difference in mean is 675. The test statistic (difference in means) represents the difference in numerical measure between two groups. One is in the column has missing value and another in the column doesn't have missing values.
 
+#### For minute column (if missing_minutes_binned depends on minute column)
 #### Hypothesis 
 - Null Hypothesis (H₀): The missingness of the column is independent of the variable used to calculate the difference in means. The observed difference (675) is due to random chance.
 - Alternative Hypothesis (H₁): The missingness of the column is dependent on the variable, meaning the difference in means (675) is significant and not due to chance.
 
 ### Permutation test
-This code performs a permutation test to evaluate whether there is a dependency between the column missing_minutes_binned (a categorical variable) and minutes (a numerical variable) in the dataset merged_data.
+This part performs a permutation test to evaluate whether there is a dependency between the column missing_minutes_binned (a categorical variable) and minutes (a numerical variable) in the dataset merged_data.
 1. Running 1000 permutations
 2. Shuffling the missing_minutes_binned column
 3. Computing the test statistic for the shuffled data - This breaks any real relationship between missing_minutes_binned and minutes, simulating the null hypothesis.
@@ -170,6 +171,13 @@ This code performs a permutation test to evaluate whether there is a dependency 
 ></iframe>
 
 5. Result with p-value: p-value 0.0 Because of the p-value < 0.05, missing_minute_binned IS depending on minute
+
+
+
+#### For rating column (if missing_minutes_binned depends on rating column)
+#### Hypothesis 
+- Null Hypothesis (H₀): The missingness of the column is independent of the variable used to calculate the difference in means. The observed difference (-0.057) is due to random chance.
+- Alternative Hypothesis (H₁): The missingness of the column is dependent on the variable, meaning the difference in means (-0.057) is significant and not due to chance
 
 ### Permutation test
 table
