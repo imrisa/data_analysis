@@ -215,7 +215,12 @@ Observed Difference: 0.03412279818560471
 P-Value: 0.0
 Because pvalue < 0.05 - regect H0. It means that the average rating for short and long preparation time for the recipe is different. Any observed differences in average ratings are not due to random variation.
 
-
+<iframe
+  src="plot6.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 
 
