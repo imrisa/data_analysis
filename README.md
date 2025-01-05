@@ -226,22 +226,23 @@ This part performs same as the previous permutation test to evaluate whether the
 ></iframe>
 
 ### Framing a Prediction Problem
-#### Q: Predict average ratings of recipes 
+#### Q: Predict average ratings of recipes based on nutritions (calories, total fat, sugar)
 Which columns are the best for the features?
 - Prediction type: regression (Linear Regression model)
-- y (prediction value): rating
+- y (prediction value): average rating
 - X (features):
     - minutes - time to cook 
     - n_steps - the number of steps to cook
     - n_ingredients - the number of ingredients
     - nutritions - any specific nutrition (calories, sugar, sodium...etc)
+-> choose nutrition, specifically calories, total fat, and sugar
+
  
 #### Justification
 - About the time
     - All features need to be known before the rate is stated by the user.
     - User interaction data should be avoided for the feature such as review because this is stated after recipe is published.
- 
- 
+
 
 ### Baseline Model
 #### Model Description
@@ -255,9 +256,18 @@ Which columns are the best for the features?
 
 #### Features
 - Features (All Quantitative because of numerical): calories, total fat, and sugar
-- Models: 20% for the test for unseen data, 80% for the training
+- Models: Linear Regression
+    - 20% for the test for unseen data, 80% for the training
     - Test data set: To see the unbiased estimate of how well the model gereralizes to new data
     - Training data set: To learn the relationship between the features and the target prediction value
+ 
+#### Making a prediction and evaluate
+ - Root Mean Squared Error (RMSE): 0.4897517055532478
+  - The square root of MSE, indicating the model's average error in the same units as the target variable (avg_rating)
+
+## shows graph here about ML
+
+
 
 
 
