@@ -170,7 +170,7 @@ This part performs a permutation test to evaluate whether there is a dependency 
   frameborder="0"
 ></iframe>
 
-5. Result with p-value: p-value 0.0 Because of the p-value < 0.05, missing_minute_binned IS depending on minute
+5. Result with p-value: p-value 0.0 Because of the p-value < 0.05, reject H0 and missing_minute_binned IS depending on minute
 
 
 
@@ -180,7 +180,43 @@ This part performs a permutation test to evaluate whether there is a dependency 
 - Alternative Hypothesis (H₁): The missingness of the column is dependent on the variable, meaning the difference in means (-0.057) is significant and not due to chance
 
 ### Permutation test
-table
+This part performs same as the previous permutation test to evaluate whether there is a dependency between the column missing_minutes_binned (a categorical variable) and rating (a numerical variable) in the dataset merged_data.
+1. Running 1000 permutations
+2. Shuffling the missing_minutes_binned column
+3. Computing the test statistic for the shuffled data - This breaks any real relationship between missing_minutes_binned and rating, simulating the null hypothesis.
+4. Computing the test statistic for the shuffled data
+   - If missing_minutes_binned has no relationship with rating (null hypothesis), we expect the test statistic (difference in group means) to be close to zero.
+   - If there is a relationship between missing_minutes_binned and rating (alternative hypothesis), we expect the test statistic to deviate significantly from zero.
+<iframe
+  src="plot5.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+5. Result with p-value: p-value 1.0 Because of the p-value > 0.05, fail to reject H0 and missing_minute_binned IS NOT depending on rating
+
+
+## Hypothesis Testing
+### Q: Does the average rating differ significantly between recipes with short cooking times and long cooking times?
+- H0: The average rating for both short and long preparation time for the recipes is the same. Any observed differences in average ratings are due to random variation.
+- H1: The average rating for short and long preparation time for the recipe is different.　Any observed differences in average ratings are not due to random variation.
+
+- Test statistic: Difference in rating means between the two groups (short time cooking and long time cooking)
+- Significance level: 0.05 (5%)
+
+#### Justification:
+1. It directly addresses the null hypothesis by generating a null distribution through label shuffling.
+2. It avoids the need for assumptions about data normality or variance homogeneity.
+3. It uses the actual observed data to create a distribution, making it robust and reliable for this specific comparison.
+
+#### Result:
+Observed Difference: 0.03412279818560471
+P-Value: 0.0
+Because pvalue < 0.05 - regect H0. It means that the average rating for short and long preparation time for the recipe is different. Any observed differences in average ratings are not due to random variation.
+
+
+
 
 
 ## Baseline Model
