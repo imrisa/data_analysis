@@ -154,7 +154,13 @@ Calcurate the observed test statistic and the difference in mean is 675. The tes
 - Alternative Hypothesis (H₁): The missingness of the column is dependent on the variable, meaning the difference in means (675) is significant and not due to chance.
 
 ### Permutation test
-explanation
+This code performs a permutation test to evaluate whether there is a dependency between the column missing_minutes_binned (a categorical variable) and minutes (a numerical variable) in the dataset merged_data.
+1. Running 1000 permutations
+2. Shuffling the missing_minutes_binned column
+3. Computing the test statistic for the shuffled data - This breaks any real relationship between missing_minutes_binned and minutes, simulating the null hypothesis.
+4. Computing the test statistic for the shuffled data
+   - If missing_minutes_binned has no relationship with minutes (null hypothesis), we expect the test statistic (difference in group means) to be close to zero.
+   - If there is a relationship between missing_minutes_binned and minutes (alternative hypothesis), we expect the test statistic to deviate significantly from zero.
 
 <iframe
   src="plot4.html"
@@ -162,6 +168,15 @@ explanation
   height="600"
   frameborder="0"
 ></iframe>
+
+
+
+### Permutation test
+table
+
+
+## Baseline Model
+
 
 
 
