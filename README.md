@@ -264,7 +264,6 @@ Which columns are the best for the features?
  - Root Mean Squared Error (RMSE): 0.48990401421032537
   - The square root of MSE, indicating the model's average error in the same units as the target variable (avg_rating)
 
-## shows graph here about ML
 
 
 ## Final Model
