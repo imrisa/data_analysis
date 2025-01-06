@@ -234,7 +234,7 @@ Which columns are the best for the features?
     - n_steps - the number of steps to cook
     - n_ingredients - the number of ingredients
     - nutritions - any specific nutrition (calories, sugar, sodium...etc)
--> choose nutrition, specifically calories, total fat, and sugar
+-> choose nutrition, specifically total fat, and sugar.
 
  
 #### Justification
@@ -263,6 +263,7 @@ Which columns are the best for the features?
 #### Making a prediction and evaluate
  - Root Mean Squared Error (RMSE): 0.48990401421032537
   - The square root of MSE, indicating the model's average error in the same units as the target variable (avg_rating)
+    if RMSE is 0.2 - 0.5, it shows accurately predict the data, however my scatter plot doesn't look like each dot spreads away to predict the rate accurately. This is because this recipe data has more rate 5 than rate 1 and it led to have the nutrition more on the higher rate.
 
 
 
