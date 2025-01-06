@@ -263,7 +263,21 @@ Which columns are the best for the features?
 #### Making a prediction and evaluate
  - Root Mean Squared Error (RMSE): 0.4968026952854217
   - The square root of MSE, indicating the model's average error in the same units as the target variable (avg_rating)
-    if RMSE is 0.2 - 0.5, it shows accurately predict the data, however my scatter plot doesn't look like each dot spreads away to predict the rate accurately. This is because this recipe data has more rate 5 than rate 1 and it led to have the nutrition more on the higher rate and the linear line is holizontal. 
+    if RMSE is 0.2 - 0.5, it shows accurately predict the data, however my scatter plot doesn't look like each dot spreads away to predict the rate accurately. This is because this recipe data has more rate 5 than rate 1 and it led to have the nutrition more on the higher rate and the linear line is holizontal.
+
+<iframe
+  src="scatterplot_total_fat.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+<iframe
+  src="scatterplot_fat_sugar_regression.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 
 
