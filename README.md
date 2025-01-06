@@ -290,6 +290,8 @@ Which columns are the best for the features?
         - Capture the non-linear relation and it enhances the model flexibility and the prediciton accuracy.
     - QuantileTransformer: Transforms the data into a normal or uniform distribution.
         - Helps models handle skewed data better by normalizing feature distributions.
+    - RandomForestRegressor: Splitting data recursively and building a series of decision trees.
+        - Working with a dataset containing complex relationships between features and the target variable. 
 
 - Features:
   - Adding two new features (protein, carbohydrates)
@@ -301,9 +303,15 @@ Which columns are the best for the features?
 - Type:
     - RandomForestRegressor: To handle non-linear relation to have more accuracy.
 
-- RMSE is a little bit improved from the previous 0.49 to 0.36
+- RMSE is a little bit changed from the previous 0.49 to 0.39, but doesn't mean 
     - standardizes variance makes the prediction easier because all features are closer
     - captured the non-linear relation is crucial because linear regression is robust to the outliner
+ 
+
+## Fairness Analysis
+#### Check the fairness about each nutritions(high and low value) in the final model if the samples are fair to get the result of relation between the predict value. 
+
+
 
 
 
