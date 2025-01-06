@@ -295,7 +295,7 @@ Which columns are the best for the features?
 
 - Features:
   - Adding two new features (protein, carbohydrates)
-   - The reason why this feature is good:
+   - The reason why this feature is good: nutritions highly affect the recipe's taste and how people feel. Also it is depending on the individual preference, such as healthy conscious or not. Protein and carbohydrates are more prominent.
    - Nutritions are highly related to the quality of the recipe and the rate
    - Protein and carbohydrates are especially related to individual preferences and it affects the rate
 
