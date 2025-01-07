@@ -307,6 +307,13 @@ Which columns are the best for the features?
     - standardizes variance makes the prediction easier because all features are closer
     - captured the non-linear relation is crucial because linear regression is robust to the outliner
  
+ <iframe
+  src="scatterplot_every_features_regression.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+ 
 
 ## Fairness Analysis
 #### Check the fairness about each nutritions(high and low value) in the final model if the samples are fair to get the result of relation between the predict value. 
