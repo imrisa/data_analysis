@@ -327,22 +327,30 @@ For fairness analysis, I split each features into two groups to see the RMSE. A 
 - H0: Our model is fair. Its precision for two groups (high and low), and any differences are due to random chance.
 - H1: Our model is unfair. Its precision for two groups (high and low) and any differences are not random chance.
 
-- Result
+#### Result
   - fat:
    - Observed RMSE Difference: 0.05196006747246118
-   - 
-   - samples are fair between the two groups
+   - P-value: 0.0
+   - Reject the null hypothesis: The model's RMSE differs significantly between the two groups -> samples are unfair between the two groups
+     
   - sugar: samples are unfair between the two groups. Prediction result might be affected depending on the sample.
-   -
-   - 
+   - Observed RMSE Difference: 0.008516514407459153
+   - P-value: 0.52
+   - Fail to reject the null hypothesis: No significant difference in RMSE between the two groups. -> samples are fair between the two groups
+     
   - protain:
-   - 
-   -
+   - Observed RMSE Difference: 0.049162329606651456
+   - P-value: 0.0
+   - Reject the null hypothesis: The model's RMSE differs significantly between the two groups. -> samples are unfair between the two groups
+     
   - carbohydrates:
-   -
-   - 
+   - Observed RMSE Difference: 0.023228975210453806
+   - P-value: 0.08
+   - Fail to reject the null hypothesis: No significant difference in RMSE between the two groups. -> samples are unfair between the two groups
+ 
 
 
+So three of four feartures are unfair. This observed unfairness in my model's performance between groups could stem from several potential causes, including dataset issues. Another potential issue is model issue, such as overfitting.The model may overfit to the majority group at the expense of the minority group.
 
 
 
