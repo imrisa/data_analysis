@@ -303,12 +303,15 @@ Which columns are the best for the features?
 - Type:
     - RandomForestRegressor: To handle non-linear relation to have more accuracy.
 
-- RMSE is a little bit changed from the previous 0.49 to 0.39, but doesn't mean 
+- RMSE is a little bit changed from the previous 0.49 to 0.39, but does not necessarily guarantee that the prediction is "more accurate" because the model might be overfitting.
+  Although, 
     - standardizes variance makes the prediction easier because all features are closer
     - captured the non-linear relation is crucial because linear regression is robust to the outliner
- 
+
+ By observing each scatter plot, the patterns are like the same as the previous, such as most of data gather around the same rate, so it is hard to tell if the prediction is accurate or not. 
+For example, carbohydrates vs Actual average rating is below and the rest of the features have similar patterns.
  <iframe
-  src="scatterplot_every_features_regression.html"
+  src="scatterplot_carbohydrates_regression.html"
   width="800"
   height="600"
   frameborder="0"
@@ -318,7 +321,26 @@ Which columns are the best for the features?
 ## Fairness Analysis
 #### Check the fairness about each nutritions(high and low value) in the final model if the samples are fair to get the result of relation between the predict value. 
 
+For fairness analysis, I split each features into two groups to see the RMSE. A difference in RMSE across groups suggests that the model performs better for one group than the other. (However, it is sensetive to outliers). Also perfortm permutation to asses whether the observed difference in RMSE between the groups is statistically significant under the null hypothesis that the two groups have the same performance distribution. 
 
+#### Hypothesis
+- H0: Our model is fair. Its precision for two groups (high and low), and any differences are due to random chance.
+- H1: Our model is unfair. Its precision for two groups (high and low) and any differences are not random chance.
+
+- Result
+  - fat:
+   - Observed RMSE Difference: 0.05196006747246118
+   - 
+   - samples are fair between the two groups
+  - sugar: samples are unfair between the two groups. Prediction result might be affected depending on the sample.
+   -
+   - 
+  - protain:
+   - 
+   -
+  - carbohydrates:
+   -
+   - 
 
 
 
