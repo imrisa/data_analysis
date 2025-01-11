@@ -353,6 +353,9 @@ For fairness analysis, I split each features into two groups to see the RMSE. A 
 So three of four feartures are unfair. This observed unfairness in my model's performance between groups could stem from several potential causes, including dataset issues. Another potential issue is model issue, such as overfitting.The model may overfit to the majority group at the expense of the minority group.
 
 
+Still working on .....
+
+
 
 
 
